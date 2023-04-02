@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/chordmoum_black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_line_0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.181"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/line_0_button_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_0_button_0_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_0_button_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_0_button_2"
+                app:layout_constraintStart_toEndOf="@+id/line_0_button_0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_0_button_1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_0_button_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_0_button_3"
+                app:layout_constraintStart_toEndOf="@+id/line_0_button_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_0_button_2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_0_button_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_0_button_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_line_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.181"
+            app:layout_constraintTop_toBottomOf="@+id/button_line_0">
+
+            <LinearLayout
+                android:id="@+id/line_1_button_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_1_button_0_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_1_button_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_1_button_2"
+                app:layout_constraintStart_toEndOf="@+id/line_1_button_0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_1_button_1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_1_button_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_1_button_3"
+                app:layout_constraintStart_toEndOf="@+id/line_1_button_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_1_button_2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_1_button_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_1_button_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_line_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.181"
+            app:layout_constraintTop_toBottomOf="@+id/button_line_1">
+
+            <LinearLayout
+                android:id="@+id/line_2_button_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_2_button_0_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_2_button_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_2_button_2"
+                app:layout_constraintStart_toEndOf="@+id/line_2_button_0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_2_button_1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_2_button_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_2_button_3"
+                app:layout_constraintStart_toEndOf="@+id/line_2_button_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_2_button_2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_2_button_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_2_button_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_line_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_line_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.181"
+            app:layout_constraintTop_toBottomOf="@+id/button_line_2">
+
+            <LinearLayout
+                android:id="@+id/line_3_button_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_3_button_0_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_3_button_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_3_button_2"
+                app:layout_constraintStart_toEndOf="@+id/line_3_button_0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_3_button_1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_3_button_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_3_button_3"
+                app:layout_constraintStart_toEndOf="@+id/line_3_button_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_3_button_2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_3_button_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_3_button_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_line_4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.181">
+
+            <LinearLayout
+                android:id="@+id/line_4_button_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_4_button_0_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_4_button_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_4_button_2"
+                app:layout_constraintStart_toEndOf="@+id/line_4_button_0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_4_button_1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_4_button_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_4_button_3"
+                app:layout_constraintStart_toEndOf="@+id/line_4_button_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_4_button_2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_4_button_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.226">
+
+                <TextView
+                    android:id="@+id/line_4_button_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="selectedNote"
+            type="Integer" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".chordmoum.Chordist">
+
+        <LinearLayout
+            android:id="@+id/base_note_0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/layout_line_0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/note_c"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 0 ? @drawable/rectangle_top_left_radius_10_green : @drawable/rectangle_top_left_radius_10_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_top_left_radius_10_green">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:textColor="@{selectedNote == 0 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/chordmoum_black" />
+
+            <LinearLayout
+                android:id="@+id/note_f"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 5 ? @drawable/rectangle_green : @drawable/rectangle_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F"
+                    android:textColor="@{selectedNote == 5 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/chordmoum_black" />
+
+            <LinearLayout
+                android:id="@+id/note_bb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 10 ? @drawable/rectangle_green : @drawable/rectangle_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bb"
+                    android:textColor="@{selectedNote == 10 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/chordmoum_black" />
+
+            <LinearLayout
+                android:id="@+id/note_eb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 3 ? @drawable/rectangle_top_right_radius_10_green : @drawable/rectangle_top_right_radius_10_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_top_right_radius_10_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eb"
+                    android:textColor="@{selectedNote == 3 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/layout_line_0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/chordmoum_black"
+            app:layout_constraintBottom_toTopOf="@+id/base_note_1"
+            app:layout_constraintTop_toBottomOf="@+id/base_note_0" />
+
+        <LinearLayout
+            android:id="@+id/base_note_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/base_line_0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_line_0">
+
+            <LinearLayout
+                android:id="@+id/note_g"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 7 ? @drawable/rectangle_green : @drawable/rectangle_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="G"
+                    android:textColor="@{selectedNote == 7 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/chordmoum_black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/chordmoum_black" />
+
+            <LinearLayout
+                android:id="@+id/note_ab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 8 ? @drawable/rectangle_green : @drawable/rectangle_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ab"
+                    android:textColor="@{selectedNote == 8 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        <View-->
+        <!--            android:id="@+id/layout_line_1"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:background="@color/chordmoum_black"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/base_note_2"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/base_note_1"-->
+        <!--            app:layout_constraintWidth_percent="0.25" />-->
+
+        <!--        <View-->
+        <!--            android:id="@+id/layout_line_2"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:background="@color/chordmoum_black"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/base_note_2"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/base_note_1"-->
+        <!--            app:layout_constraintWidth_percent="0.25" />-->
+
+        <LinearLayout
+            android:id="@+id/base_line_0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/base_note_2"
+            app:layout_constraintTop_toBottomOf="@+id/base_note_1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/chordmoum_black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/chordmoum_black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/base_note_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/layout_line_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/base_line_0">
+
+            <LinearLayout
+                android:id="@+id/note_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 2 ? @drawable/rectangle_green : @drawable/rectangle_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:textColor="@{selectedNote == 2 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/chordmoum_black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/chordmoum_black" />
+
+            <LinearLayout
+                android:id="@+id/note_db"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 1 ? @drawable/rectangle_green : @drawable/rectangle_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Db"
+                    android:textColor="@{selectedNote == 1 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/layout_line_4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/chordmoum_black"
+            app:layout_constraintBottom_toTopOf="@+id/base_note_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/base_note_2" />
+
+        <LinearLayout
+            android:id="@+id/base_note_5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_line_4">
+
+            <LinearLayout
+                android:id="@+id/note_a"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 9 ? @drawable/rectangle_bottom_left_radius_10_green : @drawable/rectangle_bottom_left_radius_10_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_bottom_left_radius_10_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textColor="@{selectedNote == 9 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/chordmoum_black" />
+
+            <LinearLayout
+                android:id="@+id/note_e"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 4 ? @drawable/rectangle_green : @drawable/rectangle_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E"
+                    android:textColor="@{selectedNote == 4 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/chordmoum_black" />
+
+            <LinearLayout
+                android:id="@+id/note_b"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 11 ? @drawable/rectangle_green : @drawable/rectangle_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:textColor="@{selectedNote == 11 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/chordmoum_black" />
+
+            <LinearLayout
+                android:id="@+id/note_gb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@{selectedNote == 6 ? @drawable/rectangle_bottom_right_radius_10_green : @drawable/rectangle_bottom_right_radius_10_black}"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:background="@drawable/rectangle_bottom_right_radius_10_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gb"
+                    android:textColor="@{selectedNote == 6 ? @color/white : @color/chrodmoum_button_text_black}"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
