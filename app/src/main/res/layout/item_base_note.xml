@@ -411,6 +411,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:fontFamily="@font/pretendard"
                 android:textSize="60dp"
                 android:gravity="center"
                 android:layout_width="match_parent"

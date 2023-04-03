@@ -14,5 +14,5 @@
     <color name="chordmoum_black">#FF333333</color>
     <color name="chordmoum_button_black">#FF4B4A4A</color>
     <color name="chordmoum_button_border_black">#FF5A5A5A</color>
-    <color name="chrodmoum_button_text_black">#FF757575</color>
+    <color name="chrodmoum_button_text_black">#FFAAAAAA</color>
 </resources>

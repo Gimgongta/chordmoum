@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.content.ContentProviderCompat.requireContext
+import com.gimgongta.chordmoum.R
 import com.gimgongta.chordmoum.databinding.ActivityChordmoumBinding
 import com.gimgongta.chordmoum.service.ChordmoumService.getNoteArr
 import com.gimgongta.chordmoum.service.ChordmoumService.list
@@ -133,8 +135,9 @@ class Chordmoum : AppCompatActivity() {
         )
 
         for (i in textArr.indices) {
-            textArr[i].textSize = 12f
+            textArr[i].textSize = 10f
             textArr[i].text = list[i].name
+            textArr[i].setTextColor(this.getColor(R.color.chrodmoum_button_text_black))
         }
     }
 
