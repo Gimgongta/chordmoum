@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="header_customization_sub_blank" type="integer" format="float">0.0</item>
+    <item name="header_customization_main_blank" type="integer" format="float">0.056</item>
+    <item name="customization_text_space" type="integer" format="float">0.86</item>
+    <item name="customization_answer_text_space" type="integer" format="float">0.825</item>
+    <item name="customization_select_space" type="integer" format="float">0.688</item>
+    <item name="customization_survey_space" type="integer" format="float">0.8</item>
+    <item name="customization_box_content_space" type="integer" format="float">0.8</item>
+
+    <integer name="customization_header_weight">81</integer>
+    <integer name="customization_content_weight">694</integer>
+    <integer name="customization_sub_header_weight">101</integer>
+    <integer name="customization_footer_weight">124</integer>
+
+    <integer name="survey_header_weight">81</integer>
+    <integer name="survey_content_weight">815</integer>
+    <integer name="survey_footer_weight">104</integer>
+
+    <item name="survey_title_space" type="integer" format="float">0.806</item>
+    <item name="selection_text_space" type="integer" format="float">0.688</item>
+    <item name="selection_title_space" type="integer" format="float">0.806</item>
+
+
+    <item name="chord_button_space" type="integer" format="float">0.180</item>
+
+
+
+</resources>

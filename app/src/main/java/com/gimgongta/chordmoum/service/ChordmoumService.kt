@@ -3,64 +3,59 @@ package com.gimgongta.chordmoum.service
 import android.content.Context
 import android.media.SoundPool
 import com.gimgongta.chordmoum.R
+import com.gimgongta.chordmoum.data.ChordmoumData
 
 object ChordmoumService {
 
-    private val major = arrayListOf(0, 16, 19)
-    private val minor = arrayListOf(0, 15, 19)
-    private val aug = arrayListOf(0, 16, 20)
-    private val dim = arrayListOf(0, 15, 18)
-    private val sus4 = arrayListOf(0, 17, 19)
-    private val major7 = arrayListOf(0, 11, 16, 19)
-    private val minor7 = arrayListOf(0, 10, 15, 19)
-    private val dim7 = arrayListOf(0, 9, 15, 18)
+    private val major = ChordmoumData(name = "M", noteArr = arrayListOf(0, 16, 19))
+    private val minor = ChordmoumData(name = "m", noteArr = arrayListOf(0, 15, 19))
+    private val aug = ChordmoumData(name = "aug", noteArr = arrayListOf(0, 16, 20))
+    private val dim = ChordmoumData(name = "dim", noteArr = arrayListOf(0, 15, 18))
+    private val sus4 = ChordmoumData(name = "sus4", noteArr = arrayListOf(0, 17, 19))
+    private val major7 = ChordmoumData(name = "M7", noteArr = arrayListOf(0, 11, 16, 19))
+    private val minor7 = ChordmoumData(name = "m7", noteArr = arrayListOf(0, 10, 15, 19))
+    private val dim7 = ChordmoumData(name = "dim7", noteArr = arrayListOf(0, 9, 15, 18))
+    private val mM7 = ChordmoumData(name = "mM7", noteArr = arrayListOf(0, 10, 16, 19, 23))
+    private val b5 = ChordmoumData(name = "b5", noteArr = arrayListOf(0, 16, 18))
+    private val mb5 = ChordmoumData(name = "mb5", noteArr = arrayListOf(0, 15, 18))
+    private val six = ChordmoumData(name = "6", noteArr = arrayListOf(0, 7, 16, 21))
+    private val seven = ChordmoumData(name = "7", noteArr = arrayListOf(0, 10, 16, 19))
+    private val nine = ChordmoumData(name = "9", noteArr = arrayListOf(0, 10, 14, 16, 19))
+    private val eleven = ChordmoumData(name = "11", noteArr = arrayListOf(0, 4, 10, 17, 19))
+    private val thirteen = ChordmoumData(name = "13", noteArr = arrayListOf(0, 10, 16, 21))
+    private val seven913 = ChordmoumData(name = "9, 13", noteArr = arrayListOf(0, 10, 14, 16, 21)) // 1 7 2 3 6
+    private val sevenF9F13 = ChordmoumData(name = "7(b9, b13)", noteArr = arrayListOf(0, 4, 7, 10, 13, 20))
+    private val sevenS9F13 = ChordmoumData(name = "7(#9, b13)", noteArr = arrayListOf(0, 4, 7, 10, 15, 20))
+    private val seven9S1113 = ChordmoumData(name = "7(9, #11, 13)", noteArr = arrayListOf(0, 4, 7, 10, 14, 17, 21))
 
-    private val sevenF5 = arrayListOf(0, 4, 6, 10)
-    private val seven913 = arrayListOf(0, 4, 7, 10, 14, 21)
-    private val sevenF9F13 = arrayListOf(0, 4, 7, 10, 13, 20)
-    private val sevenS9F13 = arrayListOf(0, 4, 7, 10, 15, 20)
-    private val seven9S1113 = arrayListOf(0, 4, 7, 10, 14, 17, 21)
+    private val add2 = ChordmoumData(name = "add2", noteArr = arrayListOf(0, 14, 16, 19))
+    private val fNine = ChordmoumData(name = "b9", noteArr = arrayListOf(0, 10, 13, 16, 19))
+    private val sNine = ChordmoumData(name = "#9", noteArr = arrayListOf(0, 10, 15, 16, 19))
+    private val sEleven = ChordmoumData(name = "#11", noteArr = arrayListOf(0, 4, 10, 18, 19))
+    private val fThirteen = ChordmoumData(name = "b13", noteArr = arrayListOf(0, 10, 16, 20))
 
-    val chordList = arrayListOf(
-        "M",
-        "m",
-        "aug",
-        "dim",
-        "sus4",
-        "m7",
-        "M7",
-        "dim7",
-        "mM7",
-        "b5",
-        "7b5",
-        "6",
-        "7",
-        "9",
-        "11",
-        "13",
-        "7(9, 13)",
-        "7(b9, b13)",
-        "7(#9, b13)",
-        "7(9, #11, 13)",
-    )
-
-    val chordNoteArrList = arrayListOf(
+    val list = arrayListOf(
         major,
         minor,
+        add2,
         aug,
         dim,
         sus4,
         minor7,
         major7,
         dim7,
-        getMinorMajor7(),
-        getF5(),
-        sevenF5,
-        getMajor6(),
-        get7th(),
-        get9(),
-        get11(),
-        get13(),
+        mM7,
+        b5,
+        mb5,
+        six,
+        seven,
+        fNine,
+        nine,
+        sNine,
+        eleven,
+        sEleven,
+        fThirteen,
+        thirteen,
         seven913,
         sevenF9F13,
         sevenS9F13,
@@ -119,106 +114,4 @@ object ChordmoumService {
             soundPool.load(ctx, R.raw.b7, 1),
         )
     }
-
-    fun getMajor(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7)
-    }
-
-    fun getMajor6(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 9)
-    }
-
-    fun getMajor7(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 11)
-    }
-
-    fun get7th(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 10)
-    }
-
-    fun getMinor7(): ArrayList<Int> {
-        return arrayListOf(0, 3, 7, 10)
-    }
-
-    fun getMinorMajor7(): ArrayList<Int> {
-        return arrayListOf(0, 3, 7, 11)
-    }
-
-    fun getMinor7F5(): ArrayList<Int> {
-        return arrayListOf(0, 3, 6, 10)
-    }
-
-    fun getSus4(): ArrayList<Int> {
-        return arrayListOf(0, 5, 7)
-    }
-
-    fun getAug(): ArrayList<Int> {
-        return arrayListOf(0, 4, 8)
-    }
-
-    fun getAug7(): ArrayList<Int> {
-        return arrayListOf(0, 4, 8, 10)
-    }
-
-    fun getAugMajor7(): ArrayList<Int> {
-        return arrayListOf(0, 4, 8, 11)
-    }
-
-    fun getDim(): ArrayList<Int> {
-        return arrayListOf(0, 3, 6)
-    }
-
-    fun getDim7(): ArrayList<Int> {
-        return arrayListOf(0, 3, 6, 9)
-    }
-
-    fun get2(): ArrayList<Int> { // == add9
-        return arrayListOf(0, 4, 7, 14)
-    }
-
-    fun getSus2(): ArrayList<Int> { // == add2
-        return arrayListOf(0, 2, 7)
-    }
-
-    fun get9(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 11, 14)
-    }
-
-    fun getMajor9(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 10, 14)
-    }
-
-    fun getS9(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 11, 15)
-    }
-
-    fun getF9(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 11, 13)
-    }
-
-    fun get11(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 11, 14, 17)
-    }
-
-    fun get7Add11(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 11, 17)
-    }
-
-    fun getS11(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 11, 18)
-    }
-
-    fun get13(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 11, 21)
-    }
-
-    fun getF13(): ArrayList<Int> {
-        return arrayListOf(0, 4, 7, 11, 20)
-    }
-
-    fun getF5(): ArrayList<Int> {
-        return arrayListOf(0, 4, 6)
-    }
-
-
 }

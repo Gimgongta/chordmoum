@@ -9,6 +9,10 @@
             name="selectedNote"
             type="Integer" />
 
+        <variable
+            name="note"
+            type="String" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -189,26 +193,6 @@
 
             </LinearLayout>
         </LinearLayout>
-
-        <!--        <View-->
-        <!--            android:id="@+id/layout_line_1"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="1dp"-->
-        <!--            android:background="@color/chordmoum_black"-->
-        <!--            app:layout_constraintBottom_toTopOf="@+id/base_note_2"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/base_note_1"-->
-        <!--            app:layout_constraintWidth_percent="0.25" />-->
-
-        <!--        <View-->
-        <!--            android:id="@+id/layout_line_2"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="1dp"-->
-        <!--            android:background="@color/chordmoum_black"-->
-        <!--            app:layout_constraintBottom_toTopOf="@+id/base_note_2"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/base_note_1"-->
-        <!--            app:layout_constraintWidth_percent="0.25" />-->
 
         <LinearLayout
             android:id="@+id/base_line_0"
@@ -412,6 +396,29 @@
                     tools:textColor="@color/chrodmoum_button_text_black" />
 
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintHeight_percent="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="60dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@{note}"
+                android:textColor="@color/white"
+                tools:textColor="@color/chrodmoum_button_text_black" />
+
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -31,7 +31,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_0_button_0_text"
@@ -53,7 +53,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/line_0_button_2"
                 app:layout_constraintStart_toEndOf="@+id/line_0_button_0"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_0_button_1_text"
@@ -75,7 +75,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/line_0_button_3"
                 app:layout_constraintStart_toEndOf="@+id/line_0_button_1"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_0_button_2_text"
@@ -94,12 +94,34 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_0_button_4"
+                app:layout_constraintStart_toEndOf="@+id/line_0_button_2"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_0_button_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_0_button_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
+
+                <TextView
+                    android:id="@+id/line_0_button_4_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="D"
@@ -128,7 +150,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_1_button_0_text"
@@ -150,7 +172,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/line_1_button_2"
                 app:layout_constraintStart_toEndOf="@+id/line_1_button_0"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_1_button_1_text"
@@ -172,7 +194,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/line_1_button_3"
                 app:layout_constraintStart_toEndOf="@+id/line_1_button_1"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_1_button_2_text"
@@ -191,12 +213,34 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_1_button_4"
+                app:layout_constraintStart_toEndOf="@+id/line_1_button_2"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_1_button_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_1_button_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
+
+                <TextView
+                    android:id="@+id/line_1_button_4_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="D"
@@ -224,7 +268,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_2_button_0_text"
@@ -246,7 +290,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/line_2_button_2"
                 app:layout_constraintStart_toEndOf="@+id/line_2_button_0"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_2_button_1_text"
@@ -268,7 +312,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/line_2_button_3"
                 app:layout_constraintStart_toEndOf="@+id/line_2_button_1"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_2_button_2_text"
@@ -287,12 +331,34 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_2_button_4"
+                app:layout_constraintStart_toEndOf="@+id/line_2_button_2"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_2_button_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_2_button_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
+
+                <TextView
+                    android:id="@+id/line_2_button_4_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="D"
@@ -320,7 +386,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_3_button_0_text"
@@ -342,7 +408,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/line_3_button_2"
                 app:layout_constraintStart_toEndOf="@+id/line_3_button_0"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_3_button_1_text"
@@ -364,7 +430,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/line_3_button_3"
                 app:layout_constraintStart_toEndOf="@+id/line_3_button_1"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_3_button_2_text"
@@ -383,12 +449,34 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_3_button_4"
+                app:layout_constraintStart_toEndOf="@+id/line_3_button_2"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_3_button_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_3_button_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
+
+                <TextView
+                    android:id="@+id/line_3_button_4_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="D"
@@ -415,7 +503,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_4_button_0_text"
@@ -437,7 +525,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/line_4_button_2"
                 app:layout_constraintStart_toEndOf="@+id/line_4_button_0"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_4_button_1_text"
@@ -459,7 +547,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/line_4_button_3"
                 app:layout_constraintStart_toEndOf="@+id/line_4_button_1"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_4_button_2_text"
@@ -478,12 +566,34 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_4_button_4"
+                app:layout_constraintStart_toEndOf="@+id/line_4_button_2"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.226">
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
 
                 <TextView
                     android:id="@+id/line_4_button_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    tools:textColor="@color/chrodmoum_button_text_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_4_button_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chord_button_click"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="@integer/chord_button_space">
+
+                <TextView
+                    android:id="@+id/line_4_button_4_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="D"

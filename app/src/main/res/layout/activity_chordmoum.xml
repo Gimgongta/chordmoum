@@ -39,9 +39,8 @@
             layout="@layout/item_base_note"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintHeight_percent="0.7"
+            app:layout_constraintHeight_percent="0.8"
             app:layout_constraintWidth_percent="0.3"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/chord_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -49,11 +48,10 @@
         <include
             android:id="@+id/chord_button"
             layout="@layout/item_chord_button"
-            app:layout_constraintHeight_percent="0.7"
+            app:layout_constraintHeight_percent="0.8"
             app:layout_constraintWidth_percent="0.6"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/base_note"
             app:layout_constraintTop_toTopOf="parent" />
